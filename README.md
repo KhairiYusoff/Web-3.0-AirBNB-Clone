@@ -2,7 +2,7 @@
 ### airbnb clone
 ![image](airbnb.png)
 
-### Tools
+### tech stacks
 - ReactJS
 - web3ui
 - Solidity
