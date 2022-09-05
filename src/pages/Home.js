@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="randomLocation">
+      {/* <div className="randomLocation">
         <div className="title">Feel Adventurous</div>
         <div className="text">
           Let us decide and discover new places to stay, live, work or just
@@ -105,7 +105,7 @@ const Home = () => {
           text="Explore A Location"
           onClick={() => console.log(checkOut)}
         />
-      </div>
+      </div> */}
     </>
   );
 };

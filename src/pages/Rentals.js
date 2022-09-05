@@ -42,6 +42,14 @@ const Rentals = () => {
 
   }, [searchFilters])
 
+  const bookRental = async function (start, end, id, dayPrice) {
+
+    for (var arr = [], dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
+      arr.push(new Date(dt).toISOString().slice(0, 10)); //yyyy-mm-dd
+    }
+
+  }
+
 
   return (
     <>
