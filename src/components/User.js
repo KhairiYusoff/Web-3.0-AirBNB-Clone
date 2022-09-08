@@ -11,9 +11,9 @@ function User({ account }) {
 
   useEffect(() => {
     async function fetchRentals() {
-      const Rentals = Moralis.Object.extend("PolygonTransaction");
+      const Rentals = Moralis.Object.extend("NewBookings");
       const query = new Moralis.Query(Rentals);
-      query.equalTo("from_address", account);
+      query.equalTo("booker", account);
       const result = await query.find();
 
       setUserRentals(result);
